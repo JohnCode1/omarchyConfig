@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ORIGINAL_DIR=$(pwd)
-REPO_URL="https://github.com/typecraft-dev/dotfiles"
+REPO_URL="https://github.com/JohnCode1/dotfiles"
 REPO_NAME="dotfiles"
 
 is_stow_installed() {
@@ -28,8 +28,8 @@ if [ $? -eq 0 ]; then
   rm -rf ~/.config/nvim ~/.config/starship.toml ~/.local/share/nvim/ ~/.cache/nvim/ ~/.config/ghostty/config
 
   cd "$REPO_NAME"
-  stow zshrc
-  stow ghostty
+  #stow zshrc
+  #stow ghostty
   stow tmux
   stow nvim
   stow starship
