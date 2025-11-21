@@ -4,3 +4,4 @@
 
 # Install asdf-vm from AUR
 yay -S --noconfirm --needed asdf-vm
+echo "finished installing asdf😬!"

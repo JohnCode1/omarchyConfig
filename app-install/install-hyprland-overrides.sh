@@ -30,4 +30,4 @@ else
     echo "Source line added successfully"
 fi
 
-echo "Hyprland overrides setup complete!"
+echo "Hyprland overrides setup complete😬!"

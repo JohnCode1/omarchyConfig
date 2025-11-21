@@ -1,0 +1,13 @@
+#!/bin/bash
+ORIGINAL_DIR=$(pwd)
+REPO_URL="https://github.com/JohnCode1/dotfiles"
+REPO_NAME="dotfiles"
+DOTFILE="starship"
+DOTFILE_HOME="$HOME/.config/$DOTFILE.toml"
+
+echo "removing old configs and stowing $DOTFILE"
+rm -rf $DOTFILE_HOME
+
+cd "$REPO_NAME"
+stow $DOTFILE
+echo "finished stowing $DOTFILE 😬!"

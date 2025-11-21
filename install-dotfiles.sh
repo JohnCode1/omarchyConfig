@@ -22,19 +22,31 @@ else
   git clone "$REPO_URL"
 fi
 
-# Check if the clone was successful
-if [ $? -eq 0 ]; then
-  echo "removing old configs"
-  rm -rf ~/.config/nvim ~/.config/starship.toml ~/.local/share/nvim/ ~/.cache/nvim/ ~/.config/ghostty/config
-
-  cd "$REPO_NAME"
-  #stow zshrc
-  #stow ghostty
-  stow tmux
-  stow nvim
-  stow starship
-else
-  echo "Failed to clone the repository."
-  exit 1
-fi
-
+cd dotfile-install
+#./alacritty-dotfile-install.sh
+./autostart-dotfile-install.sh
+./bindings-dotfile-install.sh
+./envs-dotfile-install.sh
+./ghostty-dotfiles-install.sh
+./hypridle-dotfile-install.sh
+./hyprland-dotfile-install.sh
+./hyprlock-dotfile-install.sh
+#./hyprpaper-dotfile-install.sh
+#./i3-dotfile-install.sh
+./input-dotfile-install.sh
+#./kitty-dotfile-install.sh
+./looknfeel-dotfile-install.sh
+./monitors-dotfile-install.sh
+./nvim-dotfile-install.sh
+#./picom-dotfile-install.sh
+#./polybar-dotfile-install.sh
+#./rofi-dotfile-install.sh
+#./screenLayout-dotfile-install.sh
+#./starship-dotfile-install.sh
+./tmux-dotfile-install.sh
+#./waybar-dotfile-install.sh
+#./wofi-dotfile-install.sh
+#./Xresources-dotfile-install.sh
+#./zshrc-dotfile-install.sh
+cd $HOME/omarchyConfig
+echo "Installed all dotfiles!😬" 

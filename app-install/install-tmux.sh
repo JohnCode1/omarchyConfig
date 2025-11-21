@@ -21,4 +21,4 @@ else
   git clone https://github.com/tmux-plugins/tpm $TPM_DIR
 fi
 
-echo "TPM installed successfully!"
+echo "TMux installed successfully!"

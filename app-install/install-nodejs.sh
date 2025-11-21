@@ -19,3 +19,4 @@ if ! asdf list nodejs &>/dev/null || [ -z "$(asdf list nodejs 2>/dev/null)" ]; t
     asdf install nodejs latest:20
     asdf set -u nodejs latest:20
 fi
+echo "finished installing NodeJS😬!"
